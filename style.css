@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("bodybackg.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+#container {
+    display: block;
+    margin: 200px auto;
+    border-radius: 8px;
+    width: 850px;
+    height: 300px;
+    background-image: url("backg.png");
+    background-repeat: no-repeat;
+    background-size: 850px 300px;
+    box-shadow: -2px -2px 2px #05182e88;
+}
+
+@media only screen and (max-width: 620px) {
+    #container {
+      width: 350px;
+      height: 430px;
+      background-size: 350px 430px;
+    }
+  }
+
+#title {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 620px) {
+    #title {
+      font-size: 12px;
+    }
+  }
+
+#Input_div {
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 620px) {
+    #Input_div {
+      display: block;
+      margin: 0 30px;
+    }
+  }
+
+input {
+    background-color: rgba(20, 71, 78, 0.534);
+    color: #ffffff;
+    border-style: inset;
+    border-radius: 6px;
+    border-color: rgba(0, 217, 255, 0.411);
+    font-size: 17px;
+    padding: 14px 16px;
+    width: 330px;
+    margin: 5px;
+}
+
+@media only screen and (max-width: 620px) {
+    input {
+        font-size: 15px;
+        padding: 12px 14px;
+        width: 250px;
+        margin: 3px;
+    }
+  }
+
+button {
+    background-color: #162841;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 48px;
+    padding: 0 16px;
+    width: 332px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    white-space: nowrap;
+    margin: 10px 22px;
+}
+
+@media only screen and (max-width: 620px) {
+    button {
+      font-size: 16px;
+      width: 240px;
+      display: inline-block;
+    }
+  }
+
+button:hover {
+    background-color: #032e69;
+}
+
+hr {
+    margin: 0 auto;
+    width: 450px;
+}
+
+@media only screen and (max-width: 620px) {
+    hr {
+      margin: auto;
+      width: 250px;
+    }
+  }
