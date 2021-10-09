@@ -15,7 +15,8 @@
         </div>
         <hr>
         <div id="Input_div">
-            <p>
+            <div>
+                <form action="#" method="post">
                 <input type="text" id="fullName" 
                 placeholder="Please enter your Name">
                 <input type="text" id="_fullName" 
@@ -27,11 +28,14 @@
                 placeholder="Copy of your Section here!">
                 <br>
                 <button type="button" onclick="btnFunct()" 
-                id="btn1">Click to copy text</button>
+                id="btn1">Click to copy Name</button>
                 <button type="button" onclick="btnFunction()"
-                 id="btn2">Click to copy text</button>
-            </p>
+                 id="btn2">Click to copy Section</button>
+                 <button type="reset" onclick="rsBt()" id="reset">Reset</button>
+                </form>
+            </div>
         </div>
+        
     </div>
     <script src="main.js"></script>
 </body>

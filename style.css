@@ -7,23 +7,32 @@ body {
     background-size: auto;
 }
 
+@media only screen and (max-width: 620px) {
+  body {
+    background-image: url("bodybackg.png");
+    background-repeat: no-repeat;
+    background-size: 720px 1080px;
+  }
+}
+
 #container {
     display: block;
     margin: 200px auto;
     border-radius: 8px;
     width: 850px;
-    height: 300px;
+    height: 330px;
     background-image: url("backg.png");
     background-repeat: no-repeat;
-    background-size: 850px 300px;
+    background-size: 850px 330px;
     box-shadow: -2px -2px 2px #05182e88;
 }
 
 @media only screen and (max-width: 620px) {
     #container {
-      width: 350px;
-      height: 430px;
-      background-size: 350px 430px;
+      margin: 5rem auto;
+      width: 330px;
+      height: 360px;
+      background-size: 350px 360px;
     }
   }
 
@@ -67,7 +76,7 @@ input {
     input {
         font-size: 15px;
         padding: 12px 14px;
-        width: 250px;
+        width: 230px;
         margin: 3px;
     }
   }
@@ -88,11 +97,28 @@ button {
     margin: 10px 22px;
 }
 
+#reset {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto
+}
+
 @media only screen and (max-width: 620px) {
     button {
-      font-size: 16px;
-      width: 240px;
-      display: inline-block;
+      font-size: 10px;
+      width: 120px;
+      line-height: 30px;
+      cursor: pointer;
+      display: inline;
+      margin: 10px 6px;
+    }
+  }
+
+  @media only screen and (max-width: 620px) {
+    #reset {
+      font-size: 10px;
+      width: 120px;
     }
   }
 
@@ -101,13 +127,12 @@ button:hover {
 }
 
 hr {
-    margin: 0 auto;
+    margin: 0 auto 10px;
     width: 450px;
 }
 
 @media only screen and (max-width: 620px) {
     hr {
-      margin: auto;
       width: 250px;
     }
   }
