@@ -53,10 +53,6 @@ body {
     justify-content: center;
 }
 
-::placeholder{
-	color: #4d5658;
-}
-
 @media only screen and (max-width: 620px) {
     #Input_div {
       display: block;
@@ -73,7 +69,12 @@ input {
     font-size: 17px;
     padding: 14px 16px;
     width: 330px;
+    outline: none;
     margin: 5px;
+}
+
+::placeholder{
+	color: #343a3b;
 }
 
 @media only screen and (max-width: 620px) {
