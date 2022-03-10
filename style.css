@@ -53,6 +53,10 @@ body {
     justify-content: center;
 }
 
+::placeholder{
+	color: #4d5658;
+}
+
 @media only screen and (max-width: 620px) {
     #Input_div {
       display: block;
